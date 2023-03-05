@@ -119,6 +119,8 @@ public class Game : MonoBehaviour
         }
     }
 
-    
+    public void LoadArena(){
+        SceneManager.LoadScene("Fighting Game/Scenes/FightScene");
+    }
 
 }

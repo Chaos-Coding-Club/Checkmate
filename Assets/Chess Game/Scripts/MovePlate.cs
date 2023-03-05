@@ -28,6 +28,8 @@ public class MovePlate : MonoBehaviour
         if (attack){
             GameObject piece = controller.GetComponent<Game>().GetPosition(matrixX, matrixY);
 
+            controller.GetComponent<Game>().LoadArena();
+
             Destroy(piece);
         }
 
@@ -42,6 +44,8 @@ public class MovePlate : MonoBehaviour
 
 
         controller.GetComponent<Game>().SetPosition(reference);
+
+        
         
         controller.GetComponent<Game>().NextTurn();
 
