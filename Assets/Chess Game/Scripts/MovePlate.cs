@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class MovePlate : MonoBehaviour
 {
-    public static GameObject controller;
+    static public GameObject controller;
 
-    public static GameObject reference = null;
-
-    public static string[] nameArray = new string[64];
+    GameObject reference = null;
 
     int matrixX;
     int matrixY;
 
     public bool attack = false;
+    public bool castle;
 
     public void Start(){
         if (attack){
@@ -41,19 +40,6 @@ public class MovePlate : MonoBehaviour
 
             DontDestroyOnLoad(controller);
             
-            int count = 0;
-
-            for(int i = 0; i < 8; i++){
-                for(int j = 0; j < 8; j++){
-                    if(controller.GetComponent<Game>().GetPosition(j,i)){
-                        //Debug.Log(controller.GetComponent<Game>().GetPosition(i,j).GetComponent<Chessman>().name);
-                        nameArray[count] = controller.GetComponent<Game>().GetPosition(j,i).GetComponent<Chessman>().name;
-                        print(nameArray[count]);
-                    }
-                    count++;
-                }
-            }
-
 
             controller.GetComponent<Game>().LoadArena();
 
@@ -62,6 +48,17 @@ public class MovePlate : MonoBehaviour
 
         controller.GetComponent<Game>().SetPositionEmpty(reference.GetComponent<Chessman>().GetXBoard(),
             reference.GetComponent<Chessman>().GetYBoard());
+
+        if(castle){
+            GameObject piece = controller.GetComponent<Game>().GetPosition(matrixX, matrixY);
+            piece.GetComponent<Chessman>().SetXBoard(4);
+            piece.GetComponent<Chessman>().SetYBoard(matrixY);
+            piece.GetComponent<Chessman>().SetCoords();
+            controller.GetComponent<Game>().SetPosition(piece);
+            Debug.Log(controller.GetComponent<Game>().GetPosition(4, matrixY));
+        }
+
+        
 
         reference.GetComponent<Chessman>().SetXBoard(matrixX);
         reference.GetComponent<Chessman>().SetYBoard(matrixY);

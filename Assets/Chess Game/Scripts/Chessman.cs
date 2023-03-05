@@ -10,7 +10,6 @@ public class Chessman : MonoBehaviour
    private int xBoard = -1;
    private int yBoard = -1;
 
-   
    public bool hasMoved;
 
    private string player;
@@ -148,7 +147,7 @@ public class Chessman : MonoBehaviour
         int y = yBoard + yIncrement;
 
         while(sc.PositionOnBoard(x,y) && sc.GetPosition(x,y) == null && !checkTest){
-            MovePlateSpawn(x,y);
+            MovePlateSpawn(x,y,false);
             x+= xIncrement;
             y += yIncrement;
         }
@@ -185,6 +184,21 @@ public class Chessman : MonoBehaviour
         PointMovePlate(xBoard - 1, yBoard);
         PointMovePlate(xBoard - 1, yBoard + 1);
         PointMovePlate(xBoard + 1, yBoard - 1);
+        //Debug.Log("Hello");
+        if(controller.GetComponent<Game>().GetPosition(xBoard,yBoard).GetComponent<Chessman>().hasMoved == false) {
+        Debug.Log("Hope not");
+            
+            Castle(xBoard, yBoard);
+        }
+        // Debug.Log("Here?");
+
+        // if(controller.GetComponent<Game>().GetPosition(4,7).GetComponent<Chessman>().hasMoved == false && controller.GetComponent<Game>().GetPosition(4,0).GetComponent<Chessman>().name == "black_king") {
+        // Debug.Log("No Way");
+            
+        //     Castle(4, 7);
+        // }
+        
+        
     }
 
     public void PointMovePlate(int x, int y){
@@ -193,7 +207,7 @@ public class Chessman : MonoBehaviour
             GameObject piece = sc.GetPosition(x, y);
 
             if(piece == null){
-                MovePlateSpawn(x, y);
+                MovePlateSpawn(x, y,false);
             }
             else if(piece.GetComponent<Chessman>().player != player)
             {
@@ -202,17 +216,27 @@ public class Chessman : MonoBehaviour
         }
     }
 
+    public void Castle(int x, int y){
+        Game sc =controller.GetComponent<Game>();
+        if(sc.GetPosition(5, y) == null && sc.GetPosition(6, y) == null){
+            MovePlateSpawn(7, y, true);
+        }
+        if(sc.GetPosition(3, y) == null && sc.GetPosition(2, y) == null && sc.GetPosition(1, y) == null){
+            MovePlateSpawn(0, y,true);
+        }
+    }
+
     public void PawnMovePlate(int x, int y){
         Game sc = controller.GetComponent<Game>();
         if(sc.PositionOnBoard(x,y)){
             if(sc.GetPosition(x,y) == null){
-                MovePlateSpawn(x,y);
+                MovePlateSpawn(x,y,false);
                 if(this.GetComponent<Chessman>().hasMoved == false && this.GetComponent<Chessman>().GetYBoard() == 1 && sc.GetPosition(x, y+1) == null){
     
-                    MovePlateSpawn(x,y+1);
+                    MovePlateSpawn(x,y+1,false);
                 }
                 else if(this.GetComponent<Chessman>().hasMoved == false && this.GetComponent<Chessman>().GetYBoard() == 6 && sc.GetPosition(x, y-1) == null){
-                    MovePlateSpawn(x,y-1);
+                    MovePlateSpawn(x,y-1,false);
                 }
                 
             }
@@ -227,7 +251,7 @@ public class Chessman : MonoBehaviour
         }
     }
 
-    public void MovePlateSpawn(int matrixX, int matrixY){
+    public void MovePlateSpawn(int matrixX, int matrixY, bool castle){
         float x = matrixX;
         float y =matrixY;
 
@@ -240,6 +264,7 @@ public class Chessman : MonoBehaviour
         GameObject mp = Instantiate(movePlate, new Vector3(x,y, -3.0f),  Quaternion.identity);
 
         MovePlate mpScript = mp.GetComponent<MovePlate>();
+        mpScript.castle = castle;
         mpScript.SetReference(gameObject);
         mpScript.SetCoords(matrixX, matrixY);
     }
@@ -264,4 +289,3 @@ public class Chessman : MonoBehaviour
 
     
 }
-
