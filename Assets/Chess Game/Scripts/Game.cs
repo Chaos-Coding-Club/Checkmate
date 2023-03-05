@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class Game : MonoBehaviour
 {
 
+    public static Game instance;
+
     public GameObject chessPiece;
 
     private GameObject[,] position = new GameObject[8,8];
@@ -17,9 +19,14 @@ public class Game : MonoBehaviour
     public int[] blackKingLoc = new int[2] {4,7};
     public int[] whiteKingLoc = new int[2] {4,0};
 
-
     private bool gameOver = false;
     // Start is called before the first frame update
+
+    private void Awake() {
+        instance = this;
+
+        DontDestroyOnLoad(this.gameObject);
+    }
     void Start()
     {
         playerWhite = new GameObject[] { 
