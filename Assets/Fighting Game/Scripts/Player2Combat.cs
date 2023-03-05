@@ -29,7 +29,6 @@ public class Player2Combat : MonoBehaviour
             enemyPiece = attacked;
         }
     }
-
     void Update()
     {
         if (Input.GetButtonDown("Fire1P2"))
@@ -62,182 +61,182 @@ public class Player2Combat : MonoBehaviour
             switch (enemyPiece)
             {
                 // Pawn
-                case "black_pawn":
+                case "white_pawn":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
+                        case "black_pawn":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
+                        case "black_knight":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
+                        case "black_bishop":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
+                        case "black_rook":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
+                        case "black_queen":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
+                        case "black_king":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // Knight
-                case "black_knight":
+                case "white_knight":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // Bishop
-                case "black_bishop":
+                case "white_bishop":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // Rook
-                case "black_rook":
+                case "white_rook":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // Queen
-                case "black_queen":
+                case "white_queen":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // King
-                case "black_king":
+                case "white_king":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -255,188 +254,187 @@ public class Player2Combat : MonoBehaviour
             switch (enemyPiece)
             {
                 // Pawn
-                case "black_pawn":
+                case "white_pawn":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
+                        case "black_pawn":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
+                        case "black_knight":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
+                        case "black_bishop":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
+                        case "black_rook":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
+                        case "black_queen":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
+                        case "black_king":
                             c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // Knight
-                case "black_knight":
+                case "white_knight":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // Bishop
-                case "black_bishop":
+                case "white_bishop":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // Rook
-                case "black_rook":
+                case "white_rook":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // Queen
-                case "black_queen":
+                case "white_queen":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
                 // King
-                case "black_king":
+                case "white_king":
                     switch (currentPiece)
                     {
                         // Pawn
-                        case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                        case "black_pawn":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
-                        case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                        case "black_knight":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
-                        case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                        case "black_bishop":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
-                        case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                        case "black_rook":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
-                        case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                        case "black_queen":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
-                        case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                        case "black_king":
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
 
             }
         }
-    
     }
 }

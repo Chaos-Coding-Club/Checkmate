@@ -22,7 +22,19 @@ PrefabInstance:
     - target: {fileID: 7433870420366641376, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 599713569, guid: 01abc3fe927104ce38125e68b6df2399, type: 3}
+      objectReference: {fileID: 884114464, guid: 4df34f100a1fed745a459d17298a1193, type: 3}
+    - target: {fileID: 7433870420366641376, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8694588
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433870420366641376, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
+      propertyPath: m_Color.g
+      value: 0.95688975
+      objectReference: {fileID: 0}
+    - target: {fileID: 7433870420366641376, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
+      propertyPath: m_Color.r
+      value: 0.972549
+      objectReference: {fileID: 0}
     - target: {fileID: 7433870420366641376, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -157,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7433870420366641390, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
       propertyPath: m_Name
-      value: White Pawn
+      value: White Pawn Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7433870420366641390, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
       propertyPath: m_TagString

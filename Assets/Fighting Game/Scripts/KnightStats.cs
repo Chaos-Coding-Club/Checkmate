@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KnightStats : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 50;
     [SerializeField] private Animator animator;
-    private int currentHealth;
+    public int currentHealth;
     public int attackDamage = 10;
 
 
@@ -32,6 +33,26 @@ public class KnightStats : MonoBehaviour
     void Die()
     {
         animator.SetBool("IsDead", true);
+        int spot = PlayerPrefs.GetInt("arraySpot");
+        int erase = PlayerPrefs.GetInt("eraseSpot");
+        MovePlate.nameArray[erase] = null;
+        if (this.name.StartsWith("White"))
+        {
+            MovePlate.nameArray[spot] = Player1Combat.enemyPiece;
+        }
+        else
+        {
+            MovePlate.nameArray[spot] = Player1Combat.currentPiece;
+        }
+
+
         Destroy(this);
+
+        LoadBoard();
+    }
+
+    public void LoadBoard()
+    {
+        SceneManager.LoadScene("Chess Game/Scenes/SampleScene");
     }
 }

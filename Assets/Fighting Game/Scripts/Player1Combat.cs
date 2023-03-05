@@ -95,27 +95,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -125,27 +125,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -155,27 +155,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -185,27 +185,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -215,27 +215,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -288,27 +288,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<KnightStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -318,27 +318,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<BishopStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -348,27 +348,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<RookStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -378,27 +378,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<QueenStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;
@@ -408,27 +408,27 @@ public class Player1Combat : MonoBehaviour
                     {
                         // Pawn
                         case "white_pawn":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<PawnStats>().attackDamage);
                             break;
                         // Knight
                         case "white_knight":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<KnightStats>().attackDamage);
                             break;
                         // Bishop
                         case "white_bishop":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<BishopStats>().attackDamage);
                             break;
                         // Rook
                         case "white_rook":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<RookStats>().attackDamage);
                             break;
                         // Queen
                         case "white_queen":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<QueenStats>().attackDamage);
                             break;
                         // King
                         case "white_king":
-                            c.GetComponent<PawnStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
+                            c.GetComponent<KingStats>().TakeDamage(GetComponent<KingStats>().attackDamage);
                             break;
                     }
                     break;

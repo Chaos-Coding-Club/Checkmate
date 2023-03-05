@@ -38,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8aae49cc4a7fd1f4d83fef40d34387ff
-      internalID: -1138096064
+      spriteID: 532d6c2685095c54080a1823947775b4
+      internalID: 1553292952
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e5d899f266943c4e8818465a5284a6a
-      internalID: 464439142
+      spriteID: d40388814a4780e43b45d20d02322d18
+      internalID: -1835710286
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9caf77e9bd18d5e4b940a1c8e2c5cc42
-      internalID: -1906913785
+      spriteID: aabfbadb20ab231499bd30b9803ec892
+      internalID: 1637012205
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a3a85e3d3423684f845feebfbfc0d3e
-      internalID: 437621095
+      spriteID: 1e8200e4a1b7791499418830f43b2747
+      internalID: -591461595
       vertices: []
       indices: 
       edges: []
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fafcf3d73283ceb4991e14ebcc002e28
-      internalID: -1051368375
+      spriteID: a8d9fc5fed3d1a444a9b476d9bc5a992
+      internalID: 1299723857
       vertices: []
       indices: 
       edges: []
@@ -224,7 +224,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 7146b1fb2cfdbf649b7a9fe6d2a45774
     internalID: 0
     vertices: []
     indices: 
@@ -232,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      jumpRookWhite_0: -1138096064
-      jumpRookWhite_1: 464439142
-      jumpRookWhite_2: -1906913785
-      jumpRookWhite_3: 437621095
-      jumpRookWhite_4: -1051368375
+      jumpRookWhite_0: 1553292952
+      jumpRookWhite_1: -1835710286
+      jumpRookWhite_2: 1637012205
+      jumpRookWhite_3: -591461595
+      jumpRookWhite_4: 1299723857
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

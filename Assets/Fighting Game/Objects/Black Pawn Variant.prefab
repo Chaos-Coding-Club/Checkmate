@@ -58,7 +58,7 @@ PrefabInstance:
     - target: {fileID: 7433870420366641376, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 599713569, guid: 96727ad8bb8ee7a4382396d46cb5dfe7, type: 3}
+      objectReference: {fileID: -437645614, guid: 96727ad8bb8ee7a4382396d46cb5dfe7, type: 3}
     - target: {fileID: 7433870420366641376, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
@@ -209,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7433870420366641390, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
       propertyPath: m_Name
-      value: Black Pawn
+      value: Black Pawn Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7433870420366641390, guid: 1b310f65d7f10b2488c4df9a7bfc0b24, type: 3}
       propertyPath: m_Layer

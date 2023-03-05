@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RookStats : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 75;
     [SerializeField] private Animator animator;
-    private int currentHealth;
+    public int currentHealth;
     public int attackDamage = 8;
 
 
@@ -32,6 +33,26 @@ public class RookStats : MonoBehaviour
     void Die()
     {
         animator.SetBool("IsDead", true);
+        int spot = PlayerPrefs.GetInt("arraySpot");
+        int erase = PlayerPrefs.GetInt("eraseSpot");
+        MovePlate.nameArray[erase] = null;
+        if (this.name.StartsWith("White"))
+        {
+            MovePlate.nameArray[spot] = Player1Combat.enemyPiece;
+        }
+        else
+        {
+            MovePlate.nameArray[spot] = Player1Combat.currentPiece;
+        }
+
+
         Destroy(this);
+
+        LoadBoard();
+    }
+
+    public void LoadBoard()
+    {
+        SceneManager.LoadScene("Chess Game/Scenes/SampleScene");
     }
 }

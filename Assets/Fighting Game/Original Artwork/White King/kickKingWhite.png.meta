@@ -38,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 716b8431c221f14429f2b1aeb4bdb22e
-      internalID: -21181954
+      spriteID: 4575fcad2dc05e043a606cf78cb1c78d
+      internalID: -1263464879
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4abaaeabd9d5cdd4ca8d6e16d63092fb
-      internalID: -1915692376
+      spriteID: a977dd52347b3004fa84f2968a7de049
+      internalID: 945283426
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbe7f4582e59a494b87fb0166f8ee0da
-      internalID: 170782991
+      spriteID: 91537264f0a494e4b94fca0a99bed222
+      internalID: 940029212
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c399ea9fa0e587d46ae27ca6ad3456d7
-      internalID: 327542034
+      spriteID: c450efa7c8deb004497ca151d555f279
+      internalID: 2086120937
       vertices: []
       indices: 
       edges: []
@@ -203,7 +203,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 44a48726d3a29bb49a7013814b8a93e2
     internalID: 0
     vertices: []
     indices: 
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kickKingWhite_0: -21181954
-      kickKingWhite_1: -1915692376
-      kickKingWhite_2: 170782991
-      kickKingWhite_3: 327542034
+      kickKingWhite_0: -1263464879
+      kickKingWhite_1: 945283426
+      kickKingWhite_2: 940029212
+      kickKingWhite_3: 2086120937
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

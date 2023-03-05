@@ -38,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad12716625fb61940b7e04ccbd23f93b
-      internalID: 811293419
+      spriteID: 10fd357977ec2274090be069c8baf825
+      internalID: 1480228406
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b577e099f214f50418b44c0ab84c8346
-      internalID: -1323995850
+      spriteID: bb14624df8669024eb4c33f070b1cc7b
+      internalID: -1877497423
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 59f9362050f063b4aa84201d7308025f
     internalID: 0
     vertices: []
     indices: 
@@ -169,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idleKingWhite_0: 811293419
-      idleKingWhite_1: -1323995850
+      idleKingWhite_0: 1480228406
+      idleKingWhite_1: -1877497423
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
