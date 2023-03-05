@@ -12,6 +12,7 @@ public class MovePlate : MonoBehaviour
     int matrixY;
 
     public bool attack = false;
+    public bool castle;
 
     public void Start(){
         if (attack){
@@ -38,8 +39,6 @@ public class MovePlate : MonoBehaviour
             // Debug.Log(reference);
 
             DontDestroyOnLoad(controller);
-            DontDestroyOnLoad(piece);
-            DontDestroyOnLoad(reference);
             
 
             controller.GetComponent<Game>().LoadArena();
@@ -49,6 +48,17 @@ public class MovePlate : MonoBehaviour
 
         controller.GetComponent<Game>().SetPositionEmpty(reference.GetComponent<Chessman>().GetXBoard(),
             reference.GetComponent<Chessman>().GetYBoard());
+
+        if(castle){
+            GameObject piece = controller.GetComponent<Game>().GetPosition(matrixX, matrixY);
+            piece.GetComponent<Chessman>().SetXBoard(4);
+            piece.GetComponent<Chessman>().SetYBoard(matrixY);
+            piece.GetComponent<Chessman>().SetCoords();
+            controller.GetComponent<Game>().SetPosition(piece);
+            Debug.Log(controller.GetComponent<Game>().GetPosition(4, matrixY));
+        }
+
+        
 
         reference.GetComponent<Chessman>().SetXBoard(matrixX);
         reference.GetComponent<Chessman>().SetYBoard(matrixY);
