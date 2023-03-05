@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kick_0
+      name: black_kick_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6a30178ecd0d0f448060e1496f5bbd5
-      internalID: 2134190943
+      spriteID: 9b42b5595cdd5694fb373d7edec3fc94
+      internalID: 441505790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kick_1
+      name: black_kick_1
       rect:
         serializedVersion: 2
         x: 80
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8899783e43d7ec498c6d8d3f19a6d7d
-      internalID: -1124759573
+      spriteID: 12077b843aaaa0340b372c86b14e40f0
+      internalID: -1854263851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: kick_2
+      name: black_kick_2
       rect:
         serializedVersion: 2
         x: 160
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f361447cb2ad064486cf1d249ce8fe8
-      internalID: 1007012390
+      spriteID: c28ddefff70ae664ab79ebeb01a7f607
+      internalID: 1191837225
       vertices: []
       indices: 
       edges: []
@@ -190,9 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      kick_0: 2134190943
-      kick_1: -1124759573
-      kick_2: 1007012390
+      black_kick_0: 441505790
+      black_kick_1: -1854263851
+      black_kick_2: 1191837225
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

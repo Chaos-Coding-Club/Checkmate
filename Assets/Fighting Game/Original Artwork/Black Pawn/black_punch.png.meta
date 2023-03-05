@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: punch_0
+      name: black_punch_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07f2ac94dc3154949b1215b8a983a075
-      internalID: -587042438
+      spriteID: 7fd26eeb2642f4745a712099cd43244f
+      internalID: 1745131116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: punch_1
+      name: black_punch_1
       rect:
         serializedVersion: 2
         x: 80
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e502942ba0c3247bfa72a38d328bf2
-      internalID: 1202024585
+      spriteID: f70ade3044e08614d8772440669dfc60
+      internalID: 549435368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: punch_2
+      name: black_punch_2
       rect:
         serializedVersion: 2
         x: 160
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ea5644354aca884a9c415e62d08a7b0
-      internalID: 1363254765
+      spriteID: 4f5afaf9f4027b54498bff31b13be0a6
+      internalID: -686099612
       vertices: []
       indices: 
       edges: []
@@ -190,9 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      punch_0: -587042438
-      punch_1: 1202024585
-      punch_2: 1363254765
+      black_punch_0: 1745131116
+      black_punch_1: 549435368
+      black_punch_2: -686099612
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

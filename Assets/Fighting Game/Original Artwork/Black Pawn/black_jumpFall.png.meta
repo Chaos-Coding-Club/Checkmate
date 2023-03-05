@@ -117,49 +117,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jumpFall_0
+      name: black_jumpFall_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 80
         height: 100
-      alignment: 9
-      pivot: {x: 0.53082585, y: 0.48903966}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c7a1b24f9e8f0047ba27937ff2df740
-      internalID: 1793463453
+      spriteID: ac37b3a59b63c794fa5abf7560173f10
+      internalID: 1306414166
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumpFall_1
+      name: black_jumpFall_1
       rect:
         serializedVersion: 2
         x: 80
         y: 0
         width: 80
         height: 100
-      alignment: 9
-      pivot: {x: 0.42122182, y: 0.4808194}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5ec6685b42a35a40a971158f845bc11
-      internalID: -659317778
+      spriteID: eca476ee61da51a4b90cea129d0368d3
+      internalID: 1628520038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumpFall_2
+      name: black_jumpFall_2
       rect:
         serializedVersion: 2
         x: 160
@@ -167,41 +167,41 @@ TextureImporter:
         width: 80
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76757cd95f108614a8f731a472e83ddb
-      internalID: 1023170155
+      spriteID: 593642a9ed9d7394db341a76d17fb74a
+      internalID: -119972165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumpFall_3
+      name: black_jumpFall_3
       rect:
         serializedVersion: 2
         x: 240
         y: 0
         width: 80
         height: 100
-      alignment: 9
-      pivot: {x: 0.42464715, y: 0.46163884}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0cd4718dc1bf514eb76e57dac8ae485
-      internalID: -2077746803
+      spriteID: 3481a3604843e1e48897861869dc4947
+      internalID: -165389867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumpFall_4
+      name: black_jumpFall_4
       rect:
         serializedVersion: 2
         x: 320
@@ -209,14 +209,14 @@ TextureImporter:
         width: 80
         height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53f1953d11a00974d812ccec2b38ba0b
-      internalID: -718719621
+      spriteID: 185bd78835ac3154d9b93a9a12493cbb
+      internalID: 989179966
       vertices: []
       indices: 
       edges: []
@@ -232,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      jumpFall_0: 1793463453
-      jumpFall_1: -659317778
-      jumpFall_2: 1023170155
-      jumpFall_3: -2077746803
-      jumpFall_4: -718719621
+      black_jumpFall_0: 1306414166
+      black_jumpFall_1: 1628520038
+      black_jumpFall_2: -119972165
+      black_jumpFall_3: -165389867
+      black_jumpFall_4: 989179966
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
