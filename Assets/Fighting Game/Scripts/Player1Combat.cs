@@ -14,6 +14,20 @@ public class Player1Combat : MonoBehaviour
     [SerializeField] string currentPiece;
     [SerializeField] string enemyPiece;
 
+    private void Start()
+    {
+        string attacker = PlayerPrefs.GetString("Attacker");
+        string attacked = PlayerPrefs.GetString("Attacked");
+        if (attacker.StartsWith("white"))
+        {
+            currentPiece = attacker;
+            enemyPiece = attacked;
+        } else
+        {
+            currentPiece = attacked;
+            enemyPiece = attacker;
+        }
+    }
     void Update()
     {
         if (Input.GetButtonDown("Fire1P1"))

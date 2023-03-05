@@ -5,6 +5,7 @@ using UnityEngine;
 public class QueenStats : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 90;
+    [SerializeField] private Animator animator;
     private int currentHealth;
     public int attackDamage = 10;
 
@@ -30,8 +31,7 @@ public class QueenStats : MonoBehaviour
 
     void Die()
     {
-        // Die animation
-        // Disable enemy
-        print("Player is dead.");
+        animator.SetBool("IsDead", true);
+        Destroy(this);
     }
 }

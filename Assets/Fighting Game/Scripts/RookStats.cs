@@ -5,6 +5,7 @@ using UnityEngine;
 public class RookStats : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 75;
+    [SerializeField] private Animator animator;
     private int currentHealth;
     public int attackDamage = 8;
 
@@ -30,8 +31,7 @@ public class RookStats : MonoBehaviour
 
     void Die()
     {
-        // Die animation
-        // Disable enemy
-        print("Player is dead.");
+        animator.SetBool("IsDead", true);
+        Destroy(this);
     }
 }
