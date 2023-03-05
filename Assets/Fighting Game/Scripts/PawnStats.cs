@@ -33,7 +33,19 @@ public class PawnStats : MonoBehaviour
     void Die()
     {
         animator.SetBool("IsDead", true);
+        int spot = PlayerPrefs.GetInt("arraySpot");
+        int erase = PlayerPrefs.GetInt("eraseSpot");
+            MovePlate.nameArray[erase]=null;
+        if(this.name.StartsWith("White")){
+            MovePlate.nameArray[spot]=Player1Combat.enemyPiece;
+        }
+        else{
+            MovePlate.nameArray[spot]=Player1Combat.currentPiece;
+        }
+
+
         Destroy(this);
+
         LoadBoard();
     }
 

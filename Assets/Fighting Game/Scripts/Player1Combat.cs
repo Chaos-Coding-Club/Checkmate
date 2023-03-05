@@ -11,8 +11,8 @@ public class Player1Combat : MonoBehaviour
     [SerializeField] private float kickRange = 0.5f;
     [SerializeField] private LayerMask enemyLayers;
 
-    [SerializeField] string currentPiece;
-    [SerializeField] string enemyPiece;
+    [SerializeField] public static string currentPiece;
+    [SerializeField] public static string enemyPiece;
 
     private void Start()
     {
