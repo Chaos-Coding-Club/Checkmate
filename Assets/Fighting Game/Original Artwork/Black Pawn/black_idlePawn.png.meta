@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idlePawn_0
+      name: black_idlePawn_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da77cee7a6e81fd448aa027164c2e462
-      internalID: 599713569
+      spriteID: d707c737ae828ef4a84c33babad4114c
+      internalID: -437645614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idlePawn_1
+      name: black_idlePawn_1
       rect:
         serializedVersion: 2
         x: 80
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59baa8fe435359b46a976f85056a93ba
-      internalID: 1293287371
+      spriteID: 4a4239eee4c112e428e5dbdfddeb7e2b
+      internalID: -1187726259
       vertices: []
       indices: 
       edges: []
@@ -169,8 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idlePawn_0: 599713569
-      idlePawn_1: 1293287371
+      black_idlePawn_0: -437645614
+      black_idlePawn_1: -1187726259
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1281235905
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5e6e551bfe3e54785a6fa19efcc77f2d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   movePlate: {fileID: 323218721222209982, guid: efb8e4f0391134f05933f39ef81e5665, type: 3}
+  hasMoved: 0
   black_king: {fileID: 21300000, guid: 5dd200218b7554fd79da830f807e40ed, type: 3}
   black_queen: {fileID: 21300000, guid: f21474bac31514baf9741c37e0d7962e, type: 3}
   black_knight: {fileID: 21300000, guid: 4086918fbc461403ab10a4a5754b2333, type: 3}
