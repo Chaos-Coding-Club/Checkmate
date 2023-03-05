@@ -550,7 +550,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2070052479}
   - component: {fileID: 2070052481}
-  - component: {fileID: 2070052480}
   m_Layer: 0
   m_Name: Controller
   m_TagString: GameController
@@ -573,33 +572,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2070052480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2070052478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10cfafd9b6d6d4cb594f09a2f8f58fd3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 0}
-  movePlate: {fileID: 0}
-  hasMoved: 0
-  black_king: {fileID: 21300000, guid: 5dd200218b7554fd79da830f807e40ed, type: 3}
-  black_queen: {fileID: 21300000, guid: f21474bac31514baf9741c37e0d7962e, type: 3}
-  black_knight: {fileID: 21300000, guid: 4086918fbc461403ab10a4a5754b2333, type: 3}
-  black_bishop: {fileID: 21300000, guid: 83a2cb6eb704048798acfd414ee845b8, type: 3}
-  black_rook: {fileID: 21300000, guid: 56393113ebd63461690cd8c7ffaeaaa5, type: 3}
-  black_pawn: {fileID: 21300000, guid: 9f612b0418a8242b7aacade302983efe, type: 3}
-  white_king: {fileID: 21300000, guid: 5e6e551bfe3e54785a6fa19efcc77f2d, type: 3}
-  white_queen: {fileID: 21300000, guid: 20c1efd990af94fc7aee63d74cb933d2, type: 3}
-  white_knight: {fileID: 21300000, guid: 031a6a069de4046b4a1ad05627652293, type: 3}
-  white_bishop: {fileID: 21300000, guid: 358c9dfafc9bf4728a546fa75b4a85b0, type: 3}
-  white_rook: {fileID: 21300000, guid: 207fd6b5ed4624e2d88ee063a012b65b, type: 3}
-  white_pawn: {fileID: 21300000, guid: 281eac6c8ac6640de9f4882cb3446ce4, type: 3}
 --- !u!114 &2070052481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,3 +585,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chessPiece: {fileID: 6347766303773833344, guid: b55dc0b2dbe844b87aaae054f54eafe6, type: 3}
+  check: 0
+  blackKingLoc: 0400000007000000
+  whiteKingLoc: 0400000000000000

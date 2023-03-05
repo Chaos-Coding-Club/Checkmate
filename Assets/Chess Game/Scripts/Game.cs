@@ -11,7 +11,7 @@ public class Game : MonoBehaviour
 
     public GameObject chessPiece;
 
-    private GameObject[,] position = new GameObject[8,8];
+    public static GameObject[,] position = new GameObject[8,8];
     private GameObject[] playerBlack = new GameObject[16];
     private GameObject[] playerWhite = new GameObject[16];
     private string currentPlayer = "white";

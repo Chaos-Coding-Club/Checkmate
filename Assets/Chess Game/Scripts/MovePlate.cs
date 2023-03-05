@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovePlate : MonoBehaviour
 {
-    public GameObject controller;
+    static public GameObject controller;
 
     GameObject reference = null;
 
@@ -27,6 +27,20 @@ public class MovePlate : MonoBehaviour
 
         if (attack){
             GameObject piece = controller.GetComponent<Game>().GetPosition(matrixX, matrixY);
+
+            string Attacked = piece.name;
+            PlayerPrefs.SetString("Attacked", Attacked);
+
+            string Attacker = reference.name;
+            PlayerPrefs.SetString("Attacker", Attacker);
+
+            // Debug.Log("piece: " + piece.name);
+            // Debug.Log(reference);
+
+            DontDestroyOnLoad(controller);
+            DontDestroyOnLoad(piece);
+            DontDestroyOnLoad(reference);
+            
 
             controller.GetComponent<Game>().LoadArena();
 
