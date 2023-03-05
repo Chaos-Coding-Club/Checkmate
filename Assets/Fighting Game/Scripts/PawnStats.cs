@@ -5,7 +5,8 @@ using UnityEngine;
 public class PawnStats : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 30;
-    private int currentHealth;
+    [SerializeField] private Animator animator;
+    public int currentHealth;
     public int attackDamage = 7;
 
 
@@ -30,8 +31,7 @@ public class PawnStats : MonoBehaviour
 
     void Die()
     {
-        // Die animation
-        // Disable enemy
-        print("Player is dead.");
+        animator.SetBool("IsDead", true);
+        Destroy(this);
     }
 }

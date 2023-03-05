@@ -33,7 +33,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: 1
+>>>>>>> ed4011bd6bce79517380fbc43c51251c484d76ff
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +46,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> ed4011bd6bce79517380fbc43c51251c484d76ff
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 50
+=======
+  spritePixelsToUnits: 100
+>>>>>>> ed4011bd6bce79517380fbc43c51251c484d76ff
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +82,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> ed4011bd6bce79517380fbc43c51251c484d76ff
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,6 +131,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: kickRookWhite_0
@@ -200,6 +217,9 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+    sprites: []
+>>>>>>> ed4011bd6bce79517380fbc43c51251c484d76ff
     outline: []
     physicsShape: []
     bones: []
@@ -210,11 +230,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+<<<<<<< HEAD
     nameFileIdTable:
       kickRookWhite_0: -1454668365
       kickRookWhite_1: 744963632
       kickRookWhite_2: 91113132
       kickRookWhite_3: -1079547785
+=======
+    nameFileIdTable: {}
+>>>>>>> ed4011bd6bce79517380fbc43c51251c484d76ff
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
