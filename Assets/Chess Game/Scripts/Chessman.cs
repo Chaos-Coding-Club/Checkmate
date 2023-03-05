@@ -10,6 +10,7 @@ public class Chessman : MonoBehaviour
    private int xBoard = -1;
    private int yBoard = -1;
 
+   
    public bool hasMoved;
 
    private string player;

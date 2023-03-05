@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class MovePlate : MonoBehaviour
 {
-    static public GameObject controller;
+    public static GameObject controller;
 
-    GameObject reference = null;
+    public static GameObject reference = null;
+
+    public static string[] nameArray = new string[64];
 
     int matrixX;
     int matrixY;
@@ -38,9 +40,20 @@ public class MovePlate : MonoBehaviour
             // Debug.Log(reference);
 
             DontDestroyOnLoad(controller);
-            DontDestroyOnLoad(piece);
-            DontDestroyOnLoad(reference);
             
+            int count = 0;
+
+            for(int i = 0; i < 8; i++){
+                for(int j = 0; j < 8; j++){
+                    if(controller.GetComponent<Game>().GetPosition(j,i)){
+                        //Debug.Log(controller.GetComponent<Game>().GetPosition(i,j).GetComponent<Chessman>().name);
+                        nameArray[count] = controller.GetComponent<Game>().GetPosition(j,i).GetComponent<Chessman>().name;
+                        print(nameArray[count]);
+                    }
+                    count++;
+                }
+            }
+
 
             controller.GetComponent<Game>().LoadArena();
 

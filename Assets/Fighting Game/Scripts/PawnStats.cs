@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PawnStats : MonoBehaviour
 {
@@ -33,5 +34,10 @@ public class PawnStats : MonoBehaviour
     {
         animator.SetBool("IsDead", true);
         Destroy(this);
+        LoadBoard();
+    }
+
+    public void LoadBoard(){
+        SceneManager.LoadScene("Chess Game/Scenes/SampleScene");
     }
 }
