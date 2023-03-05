@@ -76,8 +76,10 @@ GameObject:
   - component: {fileID: 7433870420366641378}
   - component: {fileID: 7433870420366641380}
   - component: {fileID: 7433870420366641381}
+  - component: {fileID: 5587695773015097683}
   - component: {fileID: 7433870420366641383}
   - component: {fileID: 7433870420366641382}
+  - component: {fileID: 6824920253034087347}
   m_Layer: 3
   m_Name: Pawn
   m_TagString: Untagged
@@ -237,6 +239,21 @@ MonoBehaviour:
   animator: {fileID: 7433870420366641380}
   runSpeed: 20
   controller: {fileID: 7433870420366641383}
+--- !u!114 &5587695773015097683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7433870420366641390}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca1dbe874e09a446b1f4bc0e8317347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7433870420366641380}
+  runSpeed: 20
+  controller: {fileID: 7433870420366641383}
 --- !u!114 &7433870420366641383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +304,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c08af65e7253a41438aac4ba43050b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7433870420366641380}
+--- !u!114 &6824920253034087347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7433870420366641390}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6f63213a8843545b96273ba5b070b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 7433870420366641380}

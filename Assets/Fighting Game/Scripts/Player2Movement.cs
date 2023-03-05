@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Player2Movement : MonoBehaviour
 {
     private float horizontalMove = 0f;
     private bool jump = false;
@@ -14,18 +14,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        horizontalMove = Input.GetAxisRaw("HorizontalP2") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("JumpP2"))
         {
             jump = true;
             animator.SetBool("IsJumping", true);
         }
 
-        if (Input.GetButtonDown("Crouch"))
+        if (Input.GetButtonDown("CrouchP2"))
         {
             crouch = true;
-        } else if (Input.GetButtonUp("Crouch"))
+        } else if (Input.GetButtonUp("CrouchP2"))
         {
             crouch = false;
         }
@@ -46,12 +46,4 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
         jump = false;
     }
-
-    //void ResetKick()
-    //{
-    //    animator.SetBool("isKicking", false);
-    //    animator.SetBool("isWalkingForwards", false);
-    //    animator.SetBool("isWalkingBackwards", false);
-    //    animator.SetBool("isIdle", true);
-    //}
 }
