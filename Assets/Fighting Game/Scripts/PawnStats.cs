@@ -6,6 +6,8 @@ public class PawnStats : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 30;
     private int currentHealth;
+    [SerializeField] private int damage = 30;
+
 
     // Update is called once per frame
     void Start()
@@ -13,14 +15,14 @@ public class PawnStats : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage()
     {
         currentHealth -= damage;
 
         
         // play hurt animation
 
-        if (currentHealth < 0)
+        if (currentHealth <= 0)
         {
             Die();
         }

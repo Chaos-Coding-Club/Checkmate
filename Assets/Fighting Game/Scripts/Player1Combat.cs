@@ -9,6 +9,10 @@ public class Player1Combat : MonoBehaviour
     [SerializeField] private float punchRange = 0.5f;
     [SerializeField] private LayerMask enemyLayers;
 
+
+    private string[] pieces = { "pawn", "knight", "bishop", "rook", "queen", "king" };
+    [SerializeField] int currentPiece;
+
     void Update()
     {
         if (Input.GetButtonDown("Fire1P1"))
@@ -38,7 +42,16 @@ public class Player1Combat : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(punchPoint.position, punchRange, enemyLayers);
         foreach(Collider2D c in hitEnemies)
         {
-            print($"Hit enemy {c.name}");
+            switch (currentPiece)
+            {
+                case 0:
+                    c.GetComponent<PawnStats>().TakeDamage();
+                    break;
+                case 1:
+                    c.GetComponent<PawnStats>().TakeDamage();
+                    break;
+
+            }
         }
     }
 
