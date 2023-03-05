@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Fighting Game/Scenes/FightScene.unity
     guid: e511709787502cf41adb9d09e86357ed
   - enabled: 1

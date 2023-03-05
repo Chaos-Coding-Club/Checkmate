@@ -14,7 +14,7 @@ public class Game : MonoBehaviour
     public static GameObject[,] position = new GameObject[8,8];
     private GameObject[] playerBlack = new GameObject[16];
     private GameObject[] playerWhite = new GameObject[16];
-    private string currentPlayer = "white";
+    public static string currentPlayer = "white";
     public bool check = false;
     public int[] blackKingLoc = new int[2] {4,7};
     public int[] whiteKingLoc = new int[2] {4,0};
@@ -162,7 +162,7 @@ public class Game : MonoBehaviour
         return gameOver;
     }
 
-    public void NextTurn(){
+    public static void NextTurn(){
         if(currentPlayer == "white"){
             currentPlayer = "black";
         }
